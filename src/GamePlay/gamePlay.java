@@ -1,7 +1,10 @@
 package GamePlay;
 
+import Characters.Monsters.MonsterConstructor;
+import Characters.Monsters.Air.airAbilities;
 import Characters.PlayerObject;
 import Menus.menus;
+
 
 import java.util.Scanner;
 
@@ -12,6 +15,11 @@ public class gamePlay {
 
         int choice;
 
+
+        MonsterConstructor monster = new MonsterConstructor("Oger","eats ass", 5, "grass", "flight");
+        airAbilities test = new airAbilities();
+        test.flightAttack(monster, player);
+        System.out.println(player.getHp());
 
         while (true) {
             gamePlay menuCall = new gamePlay();

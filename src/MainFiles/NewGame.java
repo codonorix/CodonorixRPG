@@ -39,7 +39,7 @@ public class NewGame {
         System.out.println(menu);
         String name = input.nextLine();
 
-        return new PlayerObject(name, 1, 10, 0, 1, 50, 0, 0, "", "", "",
+        return new PlayerObject(name, 1, 5000, 0, 1, 50, 0, 0, "", "", "",
                 "", "fists", "", helmets, null, null, null,
                 null, null, null, 0);
     }

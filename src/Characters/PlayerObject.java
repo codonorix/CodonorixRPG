@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class PlayerObject {
     private String name;
     private int level;
-    private int hp;
+    private double hp;
     private int mana;
     private int damage;
     private int money;
@@ -39,7 +39,7 @@ public class PlayerObject {
     Mod defeat XP drop
     40% of player level
      */
-    public PlayerObject(String name, int level, int hp, int mana, int damage, int money, double xpTotal, double xpLevelUpReq,
+    public PlayerObject(String name, int level, double hp, int mana, int damage, int money, double xpTotal, double xpLevelUpReq,
                         String helmet, String chestPlate,
                         String leggings, String boots, String sword, String bow,
                         ArrayList<helmetConstructor> helmentSet,
@@ -90,11 +90,11 @@ public class PlayerObject {
         this.level = level;
     }
 
-    public int getHp() {
+    public double getHp() {
         return hp;
     }
 
-    public void setHp(int hp) {
+    public void setHp(double hp) {
         this.hp = hp;
     }
 
